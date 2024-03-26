@@ -1,6 +1,6 @@
 [
     {
-      "bookId": 1,
+      "id": 1,
       "bookName": "Twilight",
       "author": "Stephenie Meyer",
       "image": "https://i.ibb.co/gZgHXxj/twilight.jpg",
@@ -13,7 +13,7 @@
       "yearOfPublishing": 2005
     },
     {
-      "bookId": 2,
+      "id": 2,
       "bookName": "New Moon",
       "author": "Stephenie Meyer",
       "image": "https://i.ibb.co/B4kVm5J/newmoon.jpg",
@@ -26,7 +26,7 @@
       "yearOfPublishing": 2006
     },
     {
-      "bookId": 3,
+      "id": 3,
       "bookName": "Eclipse",
       "author": "Stephenie Meyer",
       "image": "https://i.ibb.co/pLC85c5/eclipse.jpg",
@@ -39,7 +39,7 @@
       "yearOfPublishing": 2007
     },
     {
-      "bookId": 4,
+      "id": 4,
       "bookName": "A Walk to Remember",
       "author": "Nicholas Sparks",
       "image": "https://i.ibb.co/PjydQpM/walk-To-Remember.jpg",
@@ -52,7 +52,7 @@
       "yearOfPublishing": 1999
     },
     {
-      "bookId": 5,
+      "id": 5,
       "bookName": "Dracula",
       "author": "Bram Stoker",
       "image": "https://i.ibb.co/RhFVS6Q/dracula.png",
@@ -65,7 +65,7 @@
       "yearOfPublishing": 1897
     },
     {
-      "bookId": 6,
+      "id": 6,
       "bookName": "Romeo and Juliet",
       "author": "William Shakespeare",
       "image": "https://i.ibb.co/NxYQV3J/romeo-Juliet.jpg",
@@ -78,7 +78,7 @@
       "yearOfPublishing": 1597
     },
     {
-      "bookId": 7,
+      "id": 7,
       "bookName": "Jane Eyre",
       "author": "Charlotte Brontë",
       "image": "https://i.ibb.co/q5FWs8X/JaneEyre.jpg",
@@ -91,7 +91,7 @@
       "yearOfPublishing": 1847
     },
     {
-      "bookId": 8,
+      "id": 8,
       "bookName": "Pride and Prejudice",
       "author": "Jane Austen",
       "image": "https://i.ibb.co/NtGgP8N/Pride-And-Prejudice.jpg",
@@ -104,7 +104,7 @@
       "yearOfPublishing": 1813
   },
   {
-    "bookId": 9,
+    "id": 9,
     "bookName": "Wuthering Heights",
     "author": "Emily Brontë",
     "image": "https://i.ibb.co/TcFn76S/wuthering.jpg",
