@@ -9,7 +9,7 @@ const Banner = () => {
                     className="lg:max-w-sm rounded-lg shadow-3xl"
                 />
                 <div>
-                    <h1 className="text-4xl lg:text-6xl font-semibold">
+                    <h1 className="text-3xl lg:text-6xl font-semibold">
                         Books to freshen up your bookshelf
                     </h1>
 
