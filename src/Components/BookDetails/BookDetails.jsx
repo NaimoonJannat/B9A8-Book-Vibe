@@ -1,10 +1,22 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+import { saveReadBooks } from "../../utility/localstorage";
 
 const JobDetails = () => {
     const books = useLoaderData();
     const { id } = useParams();
-    const book = books.find((book) => book.id == id);
-    console.log(book);
+    const intId = parseInt(id);
+    const book = books.find((book) => book.id == intId);
+
+    const handleReadBtn = () =>{
+        saveReadBooks(intId);
+        toast('Added to the reading list successfully!')
+    }
+    const handleWishlistBtn = () =>{
+        toast('Added to the wishlist successfully!')
+    }
+
     return (
         <div className="card lg:card-side lg:p-8">
             <div className="lg:w-1/2 bg-[#1313130D] rounded-2xl  flex justify-center items-center">
@@ -23,12 +35,12 @@ const JobDetails = () => {
                     </p>
 
                     {book.tags.map((tag, index) => (
-                        <button
+                        <div
                             key={index}
                             className="bg-[#23BE0A0D] btn text-[#23BE0A] lg:p-3 font-semibold rounded-3xl text-xs"
                         >
                             {tag}
-                        </button>
+                        </div>
                     ))}
                 </div>
                 <div className="divider"></div>
@@ -47,11 +59,12 @@ const JobDetails = () => {
                     </div>
                 </div>
                 <div className="card-actions justify-start flex gap-4">
-                    <button className="btn text-black font-semibold">Read</button>
-                    <button className="btn bg-[#50B1C9] text-white font-semibold">
+                    <button onClick={handleReadBtn} className="btn text-black font-semibold">Read</button>
+                    <button onClick={handleWishlistBtn} className="btn bg-[#50B1C9] text-white font-semibold">
                         Wishlist
                     </button>
                 </div>
+                <ToastContainer />
             </div>
         </div>
     );
