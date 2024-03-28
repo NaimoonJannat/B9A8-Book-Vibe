@@ -1,7 +1,8 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
-import { saveReadBooks } from "../../utility/localstorage";
+import { getStoredReadBooks, saveReadBooks } from "../../utility/localstorage";
+import { saveWishBooks } from "../../utility/secondLocalStorage";
 
 const JobDetails = () => {
     const books = useLoaderData();
@@ -10,11 +11,25 @@ const JobDetails = () => {
     const book = books.find((book) => book.id == intId);
 
     const handleReadBtn = () =>{
-        saveReadBooks(intId);
-        toast('Added to the reading list successfully!')
+        const storedReadBooks = getStoredReadBooks();
+        const existsInReadBooks = storedReadBooks.includes(intId);
+        if (existsInReadBooks) {
+            toast('Already added to the reading list!');
+        } else {
+            saveReadBooks(intId);
+            toast('Added to the wishlist successfully!');
+        }
     }
     const handleWishlistBtn = () =>{
-        toast('Added to the wishlist successfully!')
+        const storedReadBooks = getStoredReadBooks();
+        const existsInReadBooks = storedReadBooks.includes(intId);
+
+        if (existsInReadBooks) {
+            toast('Already added to the reading list!');
+        } else {
+            saveWishBooks(intId);
+            toast('Added to the wishlist successfully!');
+        }
     }
 
     return (
