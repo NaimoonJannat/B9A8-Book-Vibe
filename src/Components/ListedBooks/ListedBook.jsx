@@ -28,7 +28,10 @@ const ListedBook = () => {
 	</Link>
 	
 </div>
-          <Outlet></Outlet>  
+            
+          <div className="my-4 lg:my-8">
+            <Outlet></Outlet> 
+          </div> 
   
         </div>
        
