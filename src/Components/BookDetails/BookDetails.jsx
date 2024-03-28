@@ -17,7 +17,7 @@ const JobDetails = () => {
             toast('Already added to the reading list!');
         } else {
             saveReadBooks(intId);
-            toast('Added to the wishlist successfully!');
+            toast('Added to the reading list successfully!');
         }
     }
     const handleWishlistBtn = () =>{
@@ -25,7 +25,7 @@ const JobDetails = () => {
         const existsInReadBooks = storedReadBooks.includes(intId);
 
         if (existsInReadBooks) {
-            toast('Already added to the reading list!');
+            toast('Try again! Already added to the reading list!');
         } else {
             saveWishBooks(intId);
             toast('Added to the wishlist successfully!');
