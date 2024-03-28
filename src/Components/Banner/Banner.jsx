@@ -15,7 +15,7 @@ const Banner = () => {
 
                     <Link
                         to="/listedBooks"
-                        className="btn lg:my-12 bg-[#23BE0A] text-lg text-white font-semibold"
+                        className="btn lg:my-12 my-4 bg-[#23BE0A] text-lg text-white font-semibold"
                     >
                         View The List
                     </Link>
