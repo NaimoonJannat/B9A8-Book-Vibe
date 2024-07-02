@@ -27,3 +27,28 @@
 ## Live Site
 
 Check out the live site [here](https://book-vibee.netlify.app/).
+
+## Installation
+
+To get a local copy up and running, follow these steps:
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your machine. You can download them from [here](https://nodejs.org/).
+
+### Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/NaimoonJannat/B9A8-Book-Vibe.git
+
+ 2. **Navigate to the project directory:** 
+   cd book-vibe
+
+3. **Install Dependencies:**
+    npm run dev
+
+4. Open your browser and navigate to 'http://localhost:3000' to see the application running.
+
+
+
